@@ -25,3 +25,9 @@ endif
 PRODUCT_HOST_PACKAGES += \
 	bios.bin \
 	vgabios-cirrus.bin \
+
+# Add a sample system app in /system_ext
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+	system_ext/app/SampleSystemApp/%
+
+PRODUCT_PACKAGES += SampleSystemApp

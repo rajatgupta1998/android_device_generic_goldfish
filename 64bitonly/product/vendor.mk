@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
     MultiDisplayProvider \
     libGoldfishProfiler
 
-$(warning "Rajat Emulator 64 bit vendor.mk")
-$(call inherit-product, device/generic/goldfish/system/system.mk)
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
-
 ifneq ($(EMULATOR_VENDOR_NO_FINGERPRINT), true)
     PRODUCT_PACKAGES += \
         fingerprint.ranchu \
